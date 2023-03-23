@@ -42,16 +42,16 @@ export default function Home() {
           </section>
           <nav className={styles.navigation}>
             <Tilt options={{ scale: 1, max: 4 }}>
-              <button>
+              <Link href={'sobre-mim'}>
                 <h2>Sobre mim</h2>
                 <p>Aqui você vai encontrar uma breve biografia. Não é um currículo.</p>
-              </button>
+              </Link>
             </Tilt>
             <Tilt options={{ scale: 1, max: 4 }}>
-              <button>
+              <Link href={'blog'}>
                 <h2>Blog</h2>
                 <p>Um projeto que sempre sonhei em fazer. Me aventuro em assuntos de tecnologia.</p>
-              </button>
+              </Link>
             </Tilt>
           </nav>
           <section className={styles.contact}>

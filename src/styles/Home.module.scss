@@ -56,6 +56,9 @@
   overflow: hidden;
 
   position: relative;
+
+  transform-style: preserve-3d;
+  transition: transform .05s linear;
 }
 
 .informations {
@@ -87,8 +90,11 @@
   justify-content: center;
   gap: 2rem;
 
-  button {
+  div {
     width: 35%;
+  }
+
+  button {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -111,6 +117,22 @@
       font-size: 0.875rem;
       text-align: justify;
     }
+
+    h2,
+    p {
+      transition: text-shadow 200ms ease-in-out;
+    }
+
+    &:hover {
+      box-shadow: 0px 0px 5px #000000;
+
+      h2,
+      p {
+        animation: glitch .3s normal;
+        text-shadow: 0px 0px 2px #000000;
+
+      }
+    }
   }
 }
 
@@ -129,5 +151,22 @@
     &:hover {
       text-decoration: underline;
     }
+  }
+}
+
+@keyframes glitch {
+
+  2%,
+  64% {
+    transform: translate(2px, 0) skew(0deg);
+  }
+
+  4%,
+  60% {
+    transform: translate(-2px, 0) skew(0deg);
+  }
+
+  62% {
+    transform: translate(0, 0) skew(5deg);
   }
 }

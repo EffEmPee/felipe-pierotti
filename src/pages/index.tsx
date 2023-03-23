@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>F. Pierotti | Programador</title>
+        <title>Home | Felipe Pierotti</title>
         <meta name="description" content="Felipe Pierotti | Programador" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />

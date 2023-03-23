@@ -34,10 +34,10 @@ export default function Home() {
           <p>Fascinado por tecnologia, desenvolvendo software e soluções que impactam pessoas.</p>
           <section className={styles.informations}>
             <div>
-              <FaMapMarkerAlt /> <span>Florianópolis, SC</span>
+              <FaMapMarkerAlt /> <Link href='https://www.google.com/maps/place/Florian%C3%B3polis,+SC'>Florianópolis, SC</Link>
             </div>
             <div>
-              <FaBook /> <span>Ciências da Computação, UFSC</span>
+              <FaBook /> <Link href='https://cco.ufsc.br/'>Ciências da Computação, UFSC</Link>
             </div>
           </section>
           <nav className={styles.navigation}>
